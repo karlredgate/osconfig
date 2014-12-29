@@ -1,0 +1,8 @@
+#
+# Generic cron jobs
+#
+
+@reboot    /usr/libexec/redgate/update-appliance
+@daily     /usr/libexec/redgate/update-appliance
+
+@reboot    /usr/libexec/redgate/sync-time
