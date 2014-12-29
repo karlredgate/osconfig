@@ -1,0 +1,7 @@
+#!/bin/sh
+output=`hwclock --systohc --utc 2>&1`
+if [ $? == 0 ]; then
+  logger -t hwclock "Successful periodic sync of system time to the HW clock"
+else
+  logger -t hwclock "Failed to sync system time to the HW clock ($?): $output"
+fi
