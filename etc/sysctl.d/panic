@@ -1,0 +1,2 @@
+kernel.panic = 5
+kernel.panic_on_oops = 1
