@@ -1,2 +1,6 @@
+
+# Enable panics.
+#
 kernel.panic = 5
 kernel.panic_on_oops = 1
+kernel.panic_on_unrecovered_nmi = 1

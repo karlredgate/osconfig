@@ -1,0 +1,7 @@
+
+## Set vm_ratio.
+vm.dirty_ratio = 20
+vm.panic_on_oom = 1
+vm.swappiness = 0
+# this is no longer present - what should it be
+vm.pagecache = 15
