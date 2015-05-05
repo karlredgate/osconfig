@@ -35,7 +35,6 @@ Requires: sysfsutils
 # Requires: libcgroup
 # Requires: libvirt
 # Requires: qemu-kvm
-Requires: redis
 # for shasum - used in tool to reset rabbitmq server
 Requires: perl-Digest-SHA
 Requires: telnet
@@ -150,16 +149,12 @@ rm -rf $RPM_BUILD_ROOT
 
 /usr/libexec/redgate/update-dmi-info
 /usr/libexec/redgate/create-users
-/usr/libexec/redgate/configure-redis
-/usr/libexec/redgate/rabbitmq-hostname-hack
 
 ldconfig
 
 # [ -f /boot/grub/redgate-splash.xpm.gz ] && mv -f /boot/grub/redgate-splash.xpm.gz /boot/grub/splash.xpm.gz
 
 # /sbin/chkconfig --level 12345 rsyslog off
-/sbin/chkconfig rabbitmq-server off
-/sbin/chkconfig redis off
 
 : Done
 
